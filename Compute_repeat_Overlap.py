@@ -24,8 +24,7 @@ def main():
 				curr = peaks[i].split("\t")
 				anno = curr[8]
 				if "|" in anno:
-					details = anno.split("|")
-					sub_fam = details[0]+ "_" + details[1]
+					sub_fam = anno
 					if sub_fam not in overlaps.keys():
 						overlaps[sub_fam] = 1
 					else:
